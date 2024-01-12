@@ -6,10 +6,10 @@ In this project, I've implemented several commonly used features such as timer, 
 
 ## Technologies Used
 
-- **Vanilla JavaScript:**
+- **Vanilla JavaScript**
 
-- **Vite:**
+- **Vite**
 
-- **Tailwind CSS:**
+- **Tailwind CSS**
 
-- **HTML:**
+- **HTML**
