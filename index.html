@@ -6,13 +6,13 @@
         <link rel="stylesheet" href="./output.css" />
         <title>Nuka-Cola</title>
     </head>
-    <body class="bg-[#E7E7E7]">
+    <body class="bg-[#E7E7E7] min-h-screen">
         <header
             class="header flex min-h-20 bg-[url('src/assets/images/white-dust-texture.png')] bg-center bg-no-repeat justify-between">
             <div
-                class="container mx-auto px-44 flex items-center justify-between">
+                class="container mx-auto px-36 flex items-center justify-between">
                 <a
-                    class="header__logo mr-28 font-['coca_cola_ii'] text-2xl cursor-pointer hover:text-red-700 transition-colors"
+                    class="header__logo mr-28 font-['coca_cola_ii'] text-3xl cursor-pointer hover:text-red-700 transition-colors"
                     href="#">
                     NukaCola
                 </a>
@@ -34,12 +34,50 @@
             </div>
         </header>
         <main>
-            <div class="container mx-auto px-36">
-                <div
-                    class="bg-[url('src/assets/images/slider-img-1.jpg')] bg-cover bg-no-repeat w-full h-96"></div>
+            <div class="container mx-auto px-10 mt-8">
+                <section class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list cursor-pointer">
+                            <li class="splide__slide h-[38.5431rem]">
+                                <div
+                                    class="bg-[url('src/assets/images/slider-img-2.jpg')] bg-cover bg-no-repeat w-full h-full rounded-2xl relative">
+                                    <div
+                                        class="splide__text pl-24 flex-col absolute top-1/2 -translate-y-1/2">
+                                        <h2
+                                            class="text-white text-4xl underline pb-4">
+                                            Quantum Catalyst
+                                        </h2>
+                                        <span
+                                            class="text-white text-base underline"
+                                            >Compete for a trip to the Pizza
+                                            Village in Diamond City!</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div
+                                    class="bg-[url('src/assets/images/slider-img-1.jpg')] bg-cover bg-no-repeat w-full h-full rounded-2xl">
+                                    <div
+                                        class="splide__text pl-24 flex-col absolute top-1/2 -translate-y-1/2">
+                                        <h2
+                                            class="text-white text-4xl underline pb-4">
+                                            Wasteland Holidays!
+                                        </h2>
+                                        <span
+                                            class="text-white text-base underline"
+                                            >Countdown: 17:05:42:18</span
+                                        >
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </main>
         <footer><div class="container mx-auto px-96"></div></footer>
+
         <script type="module" src="/main.js"></script>
     </body>
 </html>
