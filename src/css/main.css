@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'futura_lightregular';
+    font-family: 'futura_light';
     src:
         url('/fonts/futuralight-webfont.woff2') format('woff2'),
         url('/fonts/futuralight-webfont.woff') format('woff');
-    font-weight: 300;
+    font-weight: normal;
     font-style: normal;
 }
 
