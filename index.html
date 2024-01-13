@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
@@ -6,7 +6,40 @@
         <link rel="stylesheet" href="./output.css" />
         <title>Nuka-Cola</title>
     </head>
-    <body>
+    <body class="bg-[#E7E7E7]">
+        <header
+            class="header flex min-h-20 bg-[url('src/assets/images/white-dust-texture.png')] bg-center bg-no-repeat justify-between">
+            <div
+                class="container mx-auto px-44 flex items-center justify-between">
+                <a
+                    class="header__logo mr-28 font-['coca_cola_ii'] text-2xl cursor-pointer hover:text-red-700 transition-colors"
+                    href="#">
+                    NukaCola
+                </a>
+                <ul
+                    class="nav flex gap-14 font-['futuramedium'] *:cursor-pointer *:transition-colors">
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Brands</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Discover</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">Responsibility</a>
+                    </li>
+                    <li class="nav__item">
+                        <a class="nav__link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <div class="container mx-auto px-36">
+                <div
+                    class="bg-[url('src/assets/images/slider-img-1.jpg')] bg-cover bg-no-repeat w-full h-96"></div>
+            </div>
+        </main>
+        <footer><div class="container mx-auto px-96"></div></footer>
         <script type="module" src="/main.js"></script>
     </body>
 </html>

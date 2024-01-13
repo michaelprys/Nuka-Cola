@@ -1,0 +1,1 @@
+import '@splidejs/splide/css';
