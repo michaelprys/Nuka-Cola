@@ -6,13 +6,30 @@
         <link rel="stylesheet" href="./output.css" />
         <title>Nuka-Cola</title>
     </head>
-    <body class="bg-[#E7E7E7] min-h-screen">
+    <body class="min-h-screen">
+        <dialog class="modal-location bg-transparent">
+            <!-- <picture>
+                <source
+                    srcset="./src/assets/images/location.avif"
+                    type="image/avif" />
+                <source
+                    srcset="./src/assets/images/location.webp"
+                    type="image/webp" /> -->
+            <img
+                class="modal-location__image rounded-2xl h-[45rem] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 absolute"
+                src="./src/assets/images/location.jpg"
+                loading="lazy"
+                alt="Nuka Cola company location" />
+            <!-- </picture> -->
+        </dialog>
+        <!-- ./ modals -->
         <header
-            class="header flex min-h-20 bg-[url('src/assets/images/white-dust-texture.png')] bg-center bg-no-repeat justify-between">
+            class="header flex min-h-20 bg-center bg-no-repeat justify-between text-white">
+            <div class="header-wrapper"></div>
             <div
                 class="container mx-auto px-36 flex items-center justify-between">
                 <a
-                    class="header__logo mr-28 font-['coca_cola_ii'] text-3xl cursor-pointer hover:text-red-700 transition-colors"
+                    class="header__logo cursor-pointer z-10 mr-28 font-['coca_cola_ii'] text-3xl hover:text-[#e8e1c3] transition-colors"
                     href="#">
                     NukaCola
                 </a>
@@ -146,56 +163,107 @@
                 <section class="section section--brands container px-72">
                     <h2 class="text-3xl text-center mt-16">Our brands</h2>
                     <ul
-                        class="brands grid grid-cols-3 *:w-64 *:h-64 *:bg-white *:text-center *:rounded-2xl mt-12 *:mx-auto *:flex *:justify-center *:items-center *:shadow-lg *:mt-10 hover:*:scale-110 *:transition-transform">
+                        class="brands grid grid-cols-3 *:w-64 *:h-64 *:bg-white *:text-center *:rounded-2xl mt-12 *:mx-auto *:flex *:justify-center *:items-center *:shadow-lg *:mt-10 hover:*:scale-110 *:transition-transform *:cursor-pointer">
                         <li class="brands__item">
-                            <img
-                                class="brands__img"
-                                loading="lazy"
-                                src="./src/assets/images/nuka-cola.png"
-                                alt="Nuka Cola" />
+                            <picture>
+                                <source
+                                    srcset="./src/assets/images/nuka-cola.avif"
+                                    type="image/avif" />
+                                <source
+                                    srcset="./src/assets/images/nuka-cola.webp"
+                                    type="image/webp" />
+                                <img
+                                    class="brands__img"
+                                    loading="lazy"
+                                    src="./src/assets/images/nuka-cola.png"
+                                    alt="Nuka Cola" />
+                            </picture>
                         </li>
                         <li class="brands__item">
-                            <img
-                                class="brands__img"
-                                src="./src/assets/images/nuka-cola-zero-sugar.png"
-                                loading="lazy"
-                                alt="Nuka Cola Zero Sugar" />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./src/assets/images/nuka-cola-zero-sugar.avif
+                                    "
+                                    type="image/avif" />
+                                <source
+                                    srcset="
+                                        ./src/assets/images/nuka-cola-zero-sugar.webp
+                                    "
+                                    type="image/webp" />
+                                <img
+                                    class="brands__img"
+                                    src="./src/assets/images/nuka-cola-zero-sugar.png"
+                                    loading="lazy"
+                                    alt="Nuka Cola Zero Sugar" />
+                            </picture>
                         </li>
                         <li class="brands__item">
-                            <img
-                                class="brands__img"
-                                src="./src/assets/images/fusion.png"
-                                loading="lazy"
-                                alt="Fusion" />
+                            <picture>
+                                <source
+                                    srcset="./src/assets/images/fusion.avif"
+                                    type="image/avif" />
+                                <source
+                                    srcset="./src/assets/images/fusion.webp"
+                                    type="image/webp" />
+                                <img
+                                    class="brands__img"
+                                    src="./src/assets/images/fusion.png"
+                                    loading="lazy"
+                                    alt="Fusion" />
+                            </picture>
                         </li>
                         <li class="brands__item">
-                            <img
-                                class="brands__img"
-                                src="./src/assets/images/volt.png"
-                                loading="lazy"
-                                alt="Volt" />
+                            <picture>
+                                <source
+                                    srcset="./src/assets/images/volt.avif"
+                                    type="image/avif" />
+                                <source
+                                    srcset="./src/assets/images/volt.webp"
+                                    type="image/webp" />
+                                <img
+                                    class="brands__img"
+                                    src="./src/assets/images/volt.png"
+                                    loading="lazy"
+                                    alt="Volt" />
+                            </picture>
                         </li>
                         <li class="brands__item">
-                            <img
-                                class="brands__img"
-                                src="./src/assets/images/red-blast.png"
-                                loading="lazy"
-                                alt="Red Blast" />
+                            <picture>
+                                <source
+                                    srcset="./src/assets/images/red-blast.avif"
+                                    type="image/avif" />
+                                <source
+                                    srcset="./src/assets/images/red-blast.webp"
+                                    type="image/webp" />
+                                <img
+                                    class="brands__img"
+                                    src="./src/assets/images/red-blast.png"
+                                    loading="lazy"
+                                    alt="Red Blast" />
+                            </picture>
                         </li>
                         <li class="brands__item">
-                            <img
-                                class="brands__img"
-                                src="./src/assets/images/radian.png"
-                                loading="lazy"
-                                alt="Radian" />
+                            <picture>
+                                <source
+                                    srcset="./src/assets/images/radian.avif"
+                                    type="image/avif" />
+                                <source
+                                    srcset="./src/assets/images/radian.webp"
+                                    type="image/webp" />
+                                <img
+                                    class=""
+                                    src="./src/assets/images/radian.png"
+                                    loading="lazy"
+                                    alt="Radian" />
+                            </picture>
                         </li>
                     </ul>
                 </section>
             </div>
         </main>
-        <footer class="footer py-20 mt-40 relative bg-black/85">
-            <div
-                class="footer__bg bg-[url('./src/assets/images/dust-texture.jpg')] bg-center bg-cover bg-no-repeat absolute"></div>
+        <footer
+            class="footer py-20 mt-40 bg-black bg-[url('./src/assets/images/dust-texture.png')] bg-center bg-cover bg-no-repeat">
             <div class="container mx-auto px-52">
                 <div
                     class="footer__section flex items-center justify-between text-white">
@@ -204,9 +272,8 @@
                         href="#">
                         NukaCola
                     </a>
-                    <a
-                        class="footer__location flex gap-4 items-center border-2 rounded-full border-white/45 py-2 px-8 font-['futuramedium'] hover:border-white transition-colors *:hover:fill-white *:transition-colors"
-                        href="#">
+                    <button
+                        class="footer__location flex gap-4 items-center border-2 rounded-full border-white/45 py-2 px-8 font-['futuramedium'] hover:border-white transition-colors *:hover:fill-white *:transition-colors">
                         <svg
                             class="footer__location-icon fill-white/45"
                             xmlns="http://www.w3.org/2000/svg"
@@ -218,8 +285,8 @@
                             <path
                                 d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"></path>
                         </svg>
-                        Diamond City
-                    </a>
+                        Our location
+                    </button>
                 </div>
                 <span class="block border-b-2 border-white/45 my-20"></span>
                 <div
@@ -244,9 +311,9 @@
                         </div>
                     </div>
                     <div
-                        class="footer__socials flex gap-4 *:border-2 *:rounded-full *:cursor-pointer *:p-1">
+                        class="footer__socials flex gap-4 *:border-2 *:rounded-full *:cursor-pointer *:p-1 *:transition-colors hover:*:fill-[#e8e1c3] hover:*:border-[#e8e1c3]">
                         <svg
-                            class="fill-white"
+                            class="footer__social fill-white"
                             xmlns="http://www.w3.org/2000/svg"
                             width="2rem"
                             height="2rem"
@@ -256,7 +323,7 @@
                             <a href="#"></a>
                         </svg>
                         <svg
-                            class="fill-white"
+                            class="footer__social fill-white"
                             xmlns="http://www.w3.org/2000/svg"
                             width="2rem"
                             height="2rem"
