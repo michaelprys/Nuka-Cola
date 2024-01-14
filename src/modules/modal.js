@@ -14,9 +14,11 @@ const handleModalClosing = e => {
             { once: true }
         );
     }
+    // document.body.style.overflow = '';
 };
 
 openModal.addEventListener('click', () => {
     modalLocation.showModal();
+    // document.body.style.overflow = 'hidden';
 });
 modalLocation.addEventListener('click', handleModalClosing);

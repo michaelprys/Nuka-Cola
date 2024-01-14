@@ -12,10 +12,10 @@
 }
 
 @font-face {
-    font-family: 'coca_cola_ii';
+    font-family: 'nukascriptoptiregular';
     src:
-        url('/fonts/coca_cola_ii-webfont.woff2') format('woff2'),
-        url('/fonts/coca_cola_ii-webfont.woff') format('woff');
+        url('/fonts/nukafont-webfont.woff2') format('woff2'),
+        url('/fonts/nukafont-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -70,6 +70,10 @@ body {
     width: 100%;
     height: 100%;
     outline: none;
+}
+
+.modal-location img {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
 }
 
 .modal-location[open],
