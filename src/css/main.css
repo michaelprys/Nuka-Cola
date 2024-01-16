@@ -67,6 +67,8 @@ body {
 
 .modal-location img {
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.7);
+    -webkit-user-drag: none;
+    user-drag: none;
 }
 
 .modal-contact {

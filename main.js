@@ -1,21 +1,11 @@
 import './src/css/main.css';
 import './src/css/decorations.css';
-import './src/modules/slider';
-import './src/modules/modal';
+import { modals } from './src/modules/modal';
+import { splide } from './src/modules/slider';
+import { timer } from './src/modules/timer';
 
 window.addEventListener('DOMContentLoaded', () => {
-    const routes = {
-        '/': {
-            linkLabel: 'Home',
-            content: `I am in home page`,
-        },
-        '/discover': {
-            linkLabel: 'Discover',
-            content: `I am in discover page`,
-        },
-        '/about': {
-            linkLabel: 'About',
-            content: `I am in about page`,
-        },
-    };
+    modals();
+    timer('.splide__timer', '2026-02-23');
+    splide.mount();
 });

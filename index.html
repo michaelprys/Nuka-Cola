@@ -9,7 +9,7 @@
 
 <body class="min-h-screen">
     <dialog class="modal-location bg-transparent select-none outline-none w-[62.9794rem] h-[45rem]">
-        <img class="modal-location__image absolute rounded-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+        <img class="modal-location__image cursor-pointer absolute rounded-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
             src="./src/assets/images/location.jpg" loading="lazy" alt="Nuka Cola company location" />
         <button
             class="modal-location__close-btn absolute top-2 right-2 z-10 hover:*:fill-[#dcdcdc] *:transition-colors *:hover:scale-110">
@@ -24,10 +24,10 @@
     <!-- ./ modal-location -->
 
     <dialog class="modal-contact bg-transparent select-none outline-none w-[32rem] h-[35rem]  rounded-3xl">
-        <!-- <form action=""></form> -->
-        <div
+        <form action="https://api.web3forms.com/submit" method="POST"
             class="contact relative h-[35rem] mx-auto bg-[url('./src/assets/images/bg.jpg')] z-10 flex flex-col p-10 px-10 gap-6 font-['futuramedium']">
             <h2 class="contact__title text-4xl text-gray-700">Get in touch</h2>
+            <input type="hidden" name="access_key" value="e81f523c-9b1a-437d-99ac-047c6b699d3b">
             <input class="contact__input text-black rounded-3xl px-4 py-3 mt-8" type="text" name="name"
                 placeholder="Your Name">
             <input class="contact__input text-black rounded-3xl px-4 py-3" type="text" name="email"
@@ -35,8 +35,7 @@
             <textarea class="contact__textarea rounded-3xl px-4 pb-20 pt-3" name="message"
                 placeholder="Your Message"></textarea>
             <button class="contact__btn  text-white rounded-3xl px-4 py-3 w-32 bg-[#473935]">Submit</button>
-
-        </div>
+        </form>
         <button class="modal-contact__close-btn absolute top-2 right-2  z-10 *:transition-colors *:hover:scale-110">
             <svg class=" fill-gray-700" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem"
                 viewBox="0 0 24 24">
@@ -85,7 +84,7 @@
                                     <h2 class="text-white text-4xl underline pb-4">
                                         Quantum Catalyst
                                     </h2>
-                                    <span class="text-white text-base underline">Compete for a trip to the Pizza
+                                    <span class="text-white text-xl">Compete for a trip to the Pizza
                                         Village in Diamond City!</span>
                                 </div>
                             </div>
@@ -97,7 +96,8 @@
                                     <h2 class="text-white text-4xl underline pb-4">
                                         Wasteland Holidays!
                                     </h2>
-                                    <span class="text-white text-base underline">Countdown: 17:05:42:18</span>
+                                    <span class="splide__timer text-white text-xl ">
+                                    </span>
                                 </div>
                             </div>
                         </li>
