@@ -1,188 +1,195 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="./output.css" />
-        <title>Nuka-Cola Original Thirst Quenching Formula | Nuka-Cola</title>
-    </head>
-    <body class="min-h-screen">
-        <dialog class="modal-location bg-transparent">
-            <!-- <picture>
-                <source
-                    srcset="./src/assets/images/location.avif"
-                    type="image/avif" />
-                <source
-                    srcset="./src/assets/images/location.webp"
-                    type="image/webp" /> -->
-            <img
-                class="modal-location__image rounded-2xl h-[45rem] top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 absolute"
-                src="./src/assets/images/location.jpg"
-                loading="lazy"
-                alt="Nuka Cola company location" />
-            <!-- </picture> -->
-        </dialog>
-        <!-- ./ modals -->
-        <header
-            class="header flex min-h-20 bg-center bg-no-repeat justify-between text-white">
-            <div class="header-wrapper"></div>
-            <div
-                class="container mx-auto px-36 flex items-center justify-between">
-                <a
-                    class="header__logo cursor-pointer z-10 mr-28 font-['nukascriptoptiregular'] text-3xl hover:text-[#e8e1c3] transition-colors"
-                    href="#">
-                    Nuka Cola
-                </a>
-                <ul
-                    class="nav flex gap-14 font-['futuramedium'] *:cursor-pointer *:transition-colors">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuka-Cola | Zap that thirst!</title>
+</head>
+
+<body class="min-h-screen">
+    <dialog class="modal-location bg-transparent select-none outline-none w-[62.9794rem] h-[45rem]">
+        <img class="modal-location__image absolute rounded-2xl top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2"
+            src="./src/assets/images/location.jpg" loading="lazy" alt="Nuka Cola company location" />
+        <button
+            class="modal-location__close-btn absolute top-2 right-2 z-10 hover:*:fill-[#dcdcdc] *:transition-colors *:hover:scale-110">
+            <svg class=" fill-[#acb5ae]" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem"
+                viewBox="0 0 24 24">
+                <path
+                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                </path>
+            </svg>
+        </button>
+    </dialog>
+    <!-- ./ modal-location -->
+
+    <dialog class="modal-contact bg-transparent select-none outline-none w-[32rem] h-[35rem]  rounded-3xl">
+        <!-- <form action=""></form> -->
+        <div
+            class="contact relative h-[35rem] mx-auto bg-[url('./src/assets/images/bg.jpg')] z-10 flex flex-col p-10 px-10 gap-6 font-['futuramedium']">
+            <h2 class="contact__title text-4xl text-gray-700">Get in touch</h2>
+            <input class="contact__input text-black rounded-3xl px-4 py-3 mt-8" type="text" name="name"
+                placeholder="Your Name">
+            <input class="contact__input text-black rounded-3xl px-4 py-3" type="text" name="email"
+                placeholder="Your Email">
+            <textarea class="contact__textarea rounded-3xl px-4 pb-20 pt-3" name="message"
+                placeholder="Your Message"></textarea>
+            <button class="contact__btn  text-white rounded-3xl px-4 py-3 w-32 bg-[#473935]">Submit</button>
+
+        </div>
+        <button class="modal-contact__close-btn absolute top-2 right-2  z-10 *:transition-colors *:hover:scale-110">
+            <svg class=" fill-gray-700" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem"
+                viewBox="0 0 24 24">
+                <path
+                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                </path>
+            </svg>
+        </button>
+        </div>
+    </dialog>
+    <!-- ./ modal-contact -->
+    <!-- ./ modals -->
+
+    <header class="header relative flex min-h-20 bg-black bg-center bg-no-repeat justify-between text-white">
+        <div class="header-wrapper"></div>
+        <div class="container mx-auto px-36 flex items-center justify-between">
+            <a class="header__logo cursor-pointer z-10 mr-28 font-['nukascriptoptiregular'] text-3xl hover:text-[#e8e1c3] transition-colors"
+                href="#">
+                Nuka Cola
+            </a>
+            <nav class="nav">
+                <ul class="nav__list flex gap-14 font-['futuramedium'] *:cursor-pointer *:transition-colors">
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Brands</a>
+                        <a class="nav__link" href="#brands">Brands</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Discover</a>
+                        <a class="nav__link" href="pages/discover.html">Discover</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="#">Responsibility</a>
+                        <a class="nav__link" href="#">About</a>
                     </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">About Us</a>
-                    </li>
+                    <li class="nav__item"></li>
                 </ul>
-            </div>
-        </header>
-        <main>
-            <div class="container mx-auto px-10 mt-8">
-                <section class="section splide">
-                    <div class="splide__track">
-                        <ul class="splide__list cursor-pointer">
-                            <li class="splide__slide h-[38.5431rem]">
-                                <div
-                                    class="bg-[url('src/assets/images/slider-img-2.jpg')] bg-cover bg-no-repeat w-full h-full rounded-2xl relative">
-                                    <div
-                                        class="splide__text pl-24 flex-col absolute top-1/2 -translate-y-1/2">
-                                        <h2
-                                            class="text-white text-4xl underline pb-4">
-                                            Quantum Catalyst
-                                        </h2>
-                                        <span
-                                            class="text-white text-base underline"
-                                            >Compete for a trip to the Pizza
-                                            Village in Diamond City!</span
-                                        >
-                                    </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container mx-auto px-10 mt-8">
+            <section class="section splide">
+                <div class="splide__track">
+                    <ul class="splide__list cursor-pointer">
+                        <li class="splide__slide h-[38.5431rem]">
+                            <div
+                                class="bg-[url('src/assets/images/slider-img-2.jpg')] bg-cover bg-no-repeat w-full h-full rounded-2xl relative">
+                                <div class="splide__text pl-24 flex-col absolute top-1/2 -translate-y-1/2">
+                                    <h2 class="text-white text-4xl underline pb-4">
+                                        Quantum Catalyst
+                                    </h2>
+                                    <span class="text-white text-base underline">Compete for a trip to the Pizza
+                                        Village in Diamond City!</span>
                                 </div>
-                            </li>
-                            <li class="splide__slide">
-                                <div
-                                    class="bg-[url('src/assets/images/slider-img-1.jpg')] bg-cover bg-no-repeat w-full h-full rounded-2xl">
-                                    <div
-                                        class="splide__text pl-24 flex-col absolute top-1/2 -translate-y-1/2">
-                                        <h2
-                                            class="text-white text-4xl underline pb-4">
-                                            Wasteland Holidays!
-                                        </h2>
-                                        <span
-                                            class="text-white text-base underline"
-                                            >Countdown: 17:05:42:18</span
-                                        >
-                                    </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div
+                                class="bg-[url('src/assets/images/slider-img-1.jpg')] bg-cover bg-no-repeat w-full h-full rounded-2xl">
+                                <div class="splide__text pl-24 flex-col absolute top-1/2 -translate-y-1/2">
+                                    <h2 class="text-white text-4xl underline pb-4">
+                                        Wasteland Holidays!
+                                    </h2>
+                                    <span class="text-white text-base underline">Countdown: 17:05:42:18</span>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-
-                <section
-                    class="section container px-40 section--responsibility">
-                    <h2 class="text-4xl text-center mt-20">
-                        Our global responsibility
-                    </h2>
-                    <div class="card-wrapper min-h-[37rem] relative mt-24">
-                        <div
-                            class="card bg-white w-[34.5rem] h-[35rem] rounded-2xl shadow-2xl flex flex-col justify-between p-16 absolute top-0 left-0">
-                            <div class="card__content">
-                                <h3 class="text-2xl">
-                                    The well-being of wanderers and settlements
-                                    is our paramount concern.
-                                </h3>
-                                <p
-                                    class="mt-4 font-['futura_light'] font-bold text-lg">
-                                    Striving for the forging of a more
-                                    sustainable and superior common future, we
-                                    embark on the transformation of human lives,
-                                    communities, and the environment in our
-                                    domain. This journey is undertaken with a
-                                    righteous approach, as we endeavor to become
-                                    a better entity. Through our relentless
-                                    pursuit of improvement, we aim to contribute
-                                    to the construction of a more resilient and
-                                    sustainable future for all dwellers in this
-                                    post-apocalyptic realm.
-                                </p>
                             </div>
-                            <button
-                                class="border-2 border-black rounded-full py-2 w-4/5 font-['futuramedium'] hover:border-gray-500 hover:text-gray-500 transition-colors">
-                                Read More
-                            </button>
-                        </div>
-                        <div
-                            class="bg-[url('src/assets/images/poster-1.jpg')] bg-cover bg-no-repeat w-[40rem] h-[32rem] rounded-2xl absolute right-0 top-20 -z-10"></div>
-                    </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
 
-                    <div class="card-wrapper min-h-[37rem] relative mt-28">
-                        <div
-                            class="card bg-white w-[34.5rem] h-[35rem] rounded-2xl shadow-2xl flex flex-col justify-between p-16 absolute top-0 right-0">
-                            <div class="card__content">
-                                <h3 class="text-2xl">
-                                    In the wasteland, every soul matters.
-                                </h3>
-                                <p
-                                    class="mt-4 font-['futura_light'] font-bold text-lg">
-                                    We pledge to cultivate a post-apocalyptic
-                                    workplace where diversity thrives, fairness
-                                    prevails, and inclusivity reigns supreme.
-                                    Our dedication is unwavering as we forge a
-                                    united front toward a collaborative future.
-                                    We staunchly support equal opportunities,
-                                    nurturing a profound sense of belonging
-                                    among our employees and communities—both
-                                    within our organizational sanctuary and
-                                    across the vast expanse of society.
-                                </p>
-                            </div>
-                            <button
-                                class="border-2 border-black rounded-full py-2 w-4/5 font-['futuramedium'] hover:border-gray-500 hover:text-gray-500 transition-colors">
-                                Read More
-                            </button>
+            <section class="section container px-40 section--responsibility">
+                <h2 class="text-4xl text-center mt-20">
+                    Our global responsibility
+                </h2>
+                <div class="card-wrapper min-h-[37rem] relative mt-24">
+                    <div
+                        class="card bg-white w-[34.5rem] h-[35rem] rounded-2xl shadow-2xl flex flex-col justify-between p-16 absolute top-0 left-0">
+                        <div class="card__content">
+                            <h3 class="text-2xl">
+                                The well-being of wanderers and settlements
+                                is our paramount concern.
+                            </h3>
+                            <p class="mt-4 font-['futura_light'] font-bold text-lg">
+                                Striving for the forging of a more
+                                sustainable and superior common future, we
+                                embark on the transformation of human lives,
+                                communities, and the environment in our
+                                domain. This journey is undertaken with a
+                                righteous approach, as we endeavor to become
+                                a better entity. Through our relentless
+                                pursuit of improvement, we aim to contribute
+                                to the construction of a more resilient and
+                                sustainable future for all dwellers in this
+                                post-apocalyptic realm.
+                            </p>
                         </div>
-                        <div
-                            class="bg-[url('src/assets/images/poster-2.jpg')] bg-cover bg-no-repeat w-[40rem] h-[32rem] rounded-2xl absolute left-0 top-20 -z-10"></div>
+                        <button
+                            class="border-2 border-black rounded-full py-2 w-4/5 font-['futuramedium'] hover:border-gray-500 hover:text-gray-500 transition-colors">
+                            Read More
+                        </button>
                     </div>
-                </section>
+                    <div
+                        class="bg-[url('src/assets/images/poster-1.jpg')] bg-cover bg-no-repeat w-[40rem] h-[32rem] rounded-2xl absolute right-0 top-20 -z-10">
+                    </div>
+                </div>
 
-                <section class="section section--brands container px-72">
-                    <h2 class="text-4xl text-center mt-16">Our brands</h2>
-                    <ul
-                        class="brands grid grid-cols-3 *:w-64 *:h-64 *:bg-white *:text-center *:rounded-2xl mt-12 *:mx-auto *:flex *:justify-center *:items-center *:shadow-lg *:mt-10 hover:*:scale-110 *:transition-transform *:cursor-pointer">
-                        <li class="brands__item">
-                            <!-- <picture>
+                <div class="card-wrapper min-h-[37rem] relative mt-28">
+                    <div
+                        class="card bg-white w-[34.5rem] h-[35rem] rounded-2xl shadow-2xl flex flex-col justify-between p-16 absolute top-0 right-0">
+                        <div class="card__content">
+                            <h3 class="text-2xl">
+                                In the wasteland, every soul matters.
+                            </h3>
+                            <p class="mt-4 font-['futura_light'] font-bold text-lg">
+                                We pledge to cultivate a post-apocalyptic
+                                workplace where diversity thrives, fairness
+                                prevails, and inclusivity reigns supreme.
+                                Our dedication is unwavering as we forge a
+                                united front toward a collaborative future.
+                                We staunchly support equal opportunities,
+                                nurturing a profound sense of belonging
+                                among our employees and communities—both
+                                within our organizational sanctuary and
+                                across the vast expanse of society.
+                            </p>
+                        </div>
+                        <button
+                            class="border-2 border-black rounded-full py-2 w-4/5 font-['futuramedium'] hover:border-gray-500 hover:text-gray-500 transition-colors">
+                            Read More
+                        </button>
+                    </div>
+                    <div
+                        class="bg-[url('src/assets/images/poster-2.jpg')] bg-cover bg-no-repeat w-[40rem] h-[32rem] rounded-2xl absolute left-0 top-20 -z-10">
+                    </div>
+                </div>
+            </section>
+
+            <section class="section section--brands container px-72 pt-14 mt-10" id="brands">
+                <h2 class="text-4xl text-center">Our brands</h2>
+                <ul
+                    class="brands grid grid-cols-3 *:w-64 *:h-64 *:bg-white *:text-center *:rounded-2xl mt-12 *:mx-auto *:flex *:justify-center *:items-center *:shadow-lg *:mt-10 hover:*:scale-110 *:transition-transform *:cursor-pointer">
+                    <li class="brands__item">
+                        <!-- <picture>
                                 <source
                                     srcset="./src/assets/images/nuka-cola.avif"
                                     type="image/avif" />
                                 <source
                                     srcset="./src/assets/images/nuka-cola.webp"
                                     type="image/webp" /> -->
-                            <img
-                                class="brands__img"
-                                width="150px"
-                                height="150px"
-                                loading="lazy"
-                                src="./src/assets/images/nuka-cola.png"
-                                alt="Nuka Cola" />
-                            <!-- </picture> -->
-                        </li>
-                        <li class="brands__item">
-                            <!-- <picture>
+                        <img class="brands__img" width="150px" height="150px" loading="lazy"
+                            src="./src/assets/images/nuka-cola.png" alt="Nuka Cola" />
+                        <!-- </picture> -->
+                    </li>
+                    <li class="brands__item">
+                        <!-- <picture>
                                 <source
                                     srcset="
                                         ./src/assets/images/nuka-cola-zero-sugar.avif
@@ -193,171 +200,136 @@
                                         ./src/assets/images/nuka-cola-zero-sugar.webp
                                     "
                                     type="image/webp" /> -->
-                            <img
-                                class="brands__img"
-                                width="150px"
-                                height="150px"
-                                src="./src/assets/images/sunset-sarsaparilla.png"
-                                loading="lazy"
-                                alt="Sunset Sarsaparilla" />
-                            <!-- </picture> -->
-                        </li>
-                        <li class="brands__item">
-                            <!-- <picture>
+                        <img class="brands__img" width="150px" height="150px"
+                            src="./src/assets/images/sunset-sarsaparilla.png" loading="lazy"
+                            alt="Sunset Sarsaparilla" />
+                        <!-- </picture> -->
+                    </li>
+                    <li class="brands__item">
+                        <!-- <picture>
                                 <source
                                     srcset="./src/assets/images/quantum.avif"
                                     type="image/avif" />
                                 <source
                                     srcset="./src/assets/images/quantum.webp"
                                     type="image/webp" /> -->
-                            <img
-                                class="brands__img"
-                                width="150px"
-                                height="150px"
-                                src="./src/assets/images/nuka-quantum.png"
-                                loading="lazy"
-                                alt="Nuka Quantum" />
-                            <!-- </picture> -->
-                        </li>
-                        <li class="brands__item">
-                            <!-- <picture>
+                        <img class="brands__img" width="150px" height="150px" src="./src/assets/images/nuka-quantum.png"
+                            loading="lazy" alt="Nuka Quantum" />
+                        <!-- </picture> -->
+                    </li>
+                    <li class="brands__item">
+                        <!-- <picture>
                                 <source
                                     srcset="./src/assets/images/radian.avif"
                                     type="image/avif" />
                                 <source
                                     srcset="./src/assets/images/radian.webp"
                                     type="image/webp" /> -->
-                            <img
-                                class="brands__img"
-                                width="150px"
-                                height="150px"
-                                src="./src/assets/images/nuka-orange.png"
-                                loading="lazy"
-                                alt="Nuka Orange" />
-                            <!-- </picture> -->
-                        </li>
+                        <img class="brands__img" width="150px" height="150px" src="./src/assets/images/nuka-orange.png"
+                            loading="lazy" alt="Nuka Orange" />
+                        <!-- </picture> -->
+                    </li>
 
-                        </li>
-                        <li class="brands__item">
-                            <!-- <picture>
+                    </li>
+                    <li class="brands__item">
+                        <!-- <picture>
                                 <source
                                     srcset="./src/assets/images/red-blast.avif"
                                     type="image/avif" />
                                 <source
                                     srcset="./src/assets/images/red-blast.webp"
                                     type="image/webp" /> -->
-                            <img
-                                class="brands__img"
-                                width="150px"
-                                height="150px"
-                                src="./src/assets/images/nuka-cherry.png"
-                                loading="lazy"
-                                alt="Nuka Cherry" />
-                            <!-- </picture> -->
-                        </li>
-                        <li class="brands__item">
-                            <!-- <picture>
+                        <img class="brands__img" width="150px" height="150px" src="./src/assets/images/nuka-cherry.png"
+                            loading="lazy" alt="Nuka Cherry" />
+                        <!-- </picture> -->
+                    </li>
+                    <li class="brands__item">
+                        <!-- <picture>
                                 <source
                                     srcset="./src/assets/images/volt.avif"
                                     type="image/avif" />
                                 <source
                                     srcset="./src/assets/images/volt.webp"
                                     type="image/webp" /> -->
-                            <img
-                                class="brands__img"
-                                width="150px"
-                                height="150px"
-                                src="./src/assets/images/nuka-victory.png"
-                                loading="lazy"
-                                alt="Nuka Victory" />
-                            <!-- </picture> -->
-                    </ul>
-                </section>
+                        <img class="brands__img" width="150px" height="150px" src="./src/assets/images/nuka-victory.png"
+                            loading="lazy" alt="Nuka Victory" />
+                        <!-- </picture> -->
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer
+        class="footer py-20 mt-44 bg-black bg-[url('./src/assets/images/dust-texture.png')] bg-center bg-cover bg-no-repeat">
+        <div class="container mx-auto px-52">
+            <div class="footer__section flex items-center justify-between text-white">
+                <a class="header__logo mr-28 font-['nukascriptoptiregular'] text-5xl cursor-pointer translate-x-2"
+                    href="#">
+                    Nuka Cola
+                </a>
+                <button
+                    class="footer__location flex gap-4 items-center border-2 rounded-full border-white/45 py-2 px-8 font-['futuramedium'] hover:border-white transition-colors *:hover:fill-white *:transition-colors">
+                    <svg class="footer__location-icon fill-white/45" xmlns="http://www.w3.org/2000/svg" width="2rem"
+                        height="2rem" viewBox="0 0 24 24">
+                        <path
+                            d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z">
+                        </path>
+                        <path
+                            d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z">
+                        </path>
+                    </svg>
+                    Our location
+                </button>
             </div>
-        </main>
-        <footer
-            class="footer py-20 mt-40 bg-black bg-[url('./src/assets/images/dust-texture.png')] bg-center bg-cover bg-no-repeat">
-            <div class="container mx-auto px-52">
-                <div
-                    class="footer__section flex items-center justify-between text-white">
-                    <a
-                        class="header__logo mr-28 font-['nukascriptoptiregular'] text-5xl cursor-pointer translate-x-2"
-                        href="#">
-                        Nuka Cola
-                    </a>
-                    <button
-                        class="footer__location flex gap-4 items-center border-2 rounded-full border-white/45 py-2 px-8 font-['futuramedium'] hover:border-white transition-colors *:hover:fill-white *:transition-colors">
-                        <svg
-                            class="footer__location-icon fill-white/45"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="2rem"
-                            height="2rem"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 14c2.206 0 4-1.794 4-4s-1.794-4-4-4-4 1.794-4 4 1.794 4 4 4zm0-6c1.103 0 2 .897 2 2s-.897 2-2 2-2-.897-2-2 .897-2 2-2z"></path>
-                            <path
-                                d="M11.42 21.814a.998.998 0 0 0 1.16 0C12.884 21.599 20.029 16.44 20 10c0-4.411-3.589-8-8-8S4 5.589 4 9.995c-.029 6.445 7.116 11.604 7.42 11.819zM12 4c3.309 0 6 2.691 6 6.005.021 4.438-4.388 8.423-6 9.73-1.611-1.308-6.021-5.294-6-9.735 0-3.309 2.691-6 6-6z"></path>
-                        </svg>
-                        Our location
-                    </button>
-                </div>
-                <span class="block border-b-2 border-white/45 my-20"></span>
-                <div
-                    class="footer__section flex gap-28 text-white font-['futuramedium'] justify-between">
-                    <div class="footer__info-wrapper flex gap-24">
-                        <div class="footer__info">
-                            <span class="uppercase text-white/45 text-sm"
-                                >About Us</span
-                            >
-                            <ul class="mt-5 flex flex-col gap-4">
-                                <li><a href="#">Our Company</a></li>
-                                <li><a href="#">Media</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer__info">
-                            <span class="uppercase text-white/45 text-sm"
-                                >Need Help?</span
-                            >
-                            <ul class="mt-5 flex flex-col gap-4">
-                                <li><a href="#">Contact Us</a></li>
-                            </ul>
-                        </div>
+            <span class="block border-b-2 border-white/45 my-20"></span>
+            <div class="footer__section flex gap-28 text-white font-['futuramedium'] justify-between">
+                <div class="footer__info-wrapper flex gap-24">
+                    <div class="footer__info">
+                        <span class="uppercase text-white/45 text-sm">About Us</span>
+                        <ul class="flex flex-col gap-4 mt-5">
+                            <li><a href="#">Our Company</a></li>
+                            <li><a href="#">Media</a></li>
+                        </ul>
                     </div>
-                    <div
-                        class="footer__socials flex gap-4 *:border-2 *:rounded-full *:cursor-pointer *:p-1 *:transition-colors hover:*:fill-[#e8e1c3] hover:*:border-[#e8e1c3]">
-                        <svg
-                            class="footer__social fill-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="2rem"
-                            height="2rem"
-                            viewBox="0 0 24 24">
+                    <div class="footer__info">
+                        <span class="uppercase text-white/45 text-sm">Need Help?</span>
+                        <ul class="footer__list flex flex-col gap-4 mt-5">
+                            <li class="footer__item"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__socials flex gap-4 *:cursor-pointer   ">
+                    <a class="footer__social-link hover:*:fill-[#e8e1c3] hover:*:border-[#e8e1c3] *:transition-colors"
+                        href="#" target="_blank">
+                        <svg class="footer__social border-2 p-1 rounded-full fill-white"
+                            xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
                             <path
-                                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z"></path>
-                            <a href="#"></a>
+                                d="M13.397 20.997v-8.196h2.765l.411-3.209h-3.176V7.548c0-.926.258-1.56 1.587-1.56h1.684V3.127A22.336 22.336 0 0 0 14.201 3c-2.444 0-4.122 1.492-4.122 4.231v2.355H7.332v3.209h2.753v8.202h3.312z">
+                            </path>
                         </svg>
-                        <svg
-                            class="footer__social fill-white"
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="2rem"
-                            height="2rem"
-                            viewBox="0 0 24 24">
+                    </a>
+                    <a class="footer__social-link hover:*:fill-[#e8e1c3] hover:*:border-[#e8e1c3] *:transition-colors"
+                        href="#" target="_blank">
+                        <svg class="footer__social border-2 rounded-full  p-1 fill-white"
+                            xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24">
                             <path
-                                d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
+                                d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z">
+                            </path>
                             <circle cx="16.806" cy="7.207" r="1.078"></circle>
                             <path
-                                d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z"></path>
-                            <a href="#"></a>
+                                d="M20.533 6.111A4.605 4.605 0 0 0 17.9 3.479a6.606 6.606 0 0 0-2.186-.42c-.963-.042-1.268-.054-3.71-.054s-2.755 0-3.71.054a6.554 6.554 0 0 0-2.184.42 4.6 4.6 0 0 0-2.633 2.632 6.585 6.585 0 0 0-.419 2.186c-.043.962-.056 1.267-.056 3.71 0 2.442 0 2.753.056 3.71.015.748.156 1.486.419 2.187a4.61 4.61 0 0 0 2.634 2.632 6.584 6.584 0 0 0 2.185.45c.963.042 1.268.055 3.71.055s2.755 0 3.71-.055a6.615 6.615 0 0 0 2.186-.419 4.613 4.613 0 0 0 2.633-2.633c.263-.7.404-1.438.419-2.186.043-.962.056-1.267.056-3.71s0-2.753-.056-3.71a6.581 6.581 0 0 0-.421-2.217zm-1.218 9.532a5.043 5.043 0 0 1-.311 1.688 2.987 2.987 0 0 1-1.712 1.711 4.985 4.985 0 0 1-1.67.311c-.95.044-1.218.055-3.654.055-2.438 0-2.687 0-3.655-.055a4.96 4.96 0 0 1-1.669-.311 2.985 2.985 0 0 1-1.719-1.711 5.08 5.08 0 0 1-.311-1.669c-.043-.95-.053-1.218-.053-3.654 0-2.437 0-2.686.053-3.655a5.038 5.038 0 0 1 .311-1.687c.305-.789.93-1.41 1.719-1.712a5.01 5.01 0 0 1 1.669-.311c.951-.043 1.218-.055 3.655-.055s2.687 0 3.654.055a4.96 4.96 0 0 1 1.67.311 2.991 2.991 0 0 1 1.712 1.712 5.08 5.08 0 0 1 .311 1.669c.043.951.054 1.218.054 3.655 0 2.436 0 2.698-.043 3.654h-.011z">
+                            </path>
                         </svg>
-                    </div>
+                    </a>
                 </div>
-                <span class="block border-b-2 border-white/45 mt-20"></span>
-                <span
-                    class="flex justify-end font-['futuramedium'] text-white text-sm mt-12"
-                    >2024 The Nuka-Cola Company</span
-                >
             </div>
-        </footer>
+            <span class="block border-b-2 border-white/45 mt-20"></span>
+            <span class="flex justify-end font-['futuramedium'] text-white text-sm mt-12">2024 The Nuka-Cola
+                Company</span>
+        </div>
 
-        <script type="module" src="/main.js"></script>
-    </body>
+    </footer>
+
+    <script type="module" src="/main.js"></script>
+</body>
+
 </html>
